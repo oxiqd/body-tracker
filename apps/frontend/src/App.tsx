@@ -5,7 +5,7 @@ import {WeightForm} from "./components/weight-from";
 import {WeightsList} from "./components/weight-list";
 import {Auth} from "./components/auth";
 
-const API_URL = 'http://localhost:3000';
+export const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000';
 
 const App: React.FC = () => {
   const [token, setToken] = useState('');
