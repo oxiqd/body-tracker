@@ -13,6 +13,7 @@ async function bootstrap() {
     origin: [
       'https://frontend-body-tracker.onrender.com', // фронт
       'https://body-tracker.onrender.com', // фронт
+      'https://body-tracker-54iq.onrender.com/',
       'http://localhost:5173', // локально
     ],
     credentials: true, // если используешь куки или авторизацию
