@@ -1,0 +1,5 @@
+{
+  "name": "body-tracker",
+  "private": true,
+  "workspaces": ["apps/*", "packages/*"]
+}
