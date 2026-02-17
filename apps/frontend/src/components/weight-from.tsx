@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
+import { API_URL } from '../config';
 
 interface WeightFormProps {
   token: string;
   onAdd: () => void;
 }
-
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000';
 
 export const WeightForm: React.FC<WeightFormProps> = ({ token, onAdd }) => {
   const [weightInput, setWeightInput] = useState('');

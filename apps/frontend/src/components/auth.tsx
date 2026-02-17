@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 import { AuthResponse } from '../types';
+import { API_URL } from '../config';
 
 interface AuthProps {
   setToken: (token: string) => void;
 }
-
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000';
 
 export const Auth: React.FC<AuthProps> = ({ setToken }) => {
   const [email, setEmail] = useState('');
