@@ -10,15 +10,12 @@ async function bootstrap() {
 
   // Разрешаем CORS для фронта Render
   app.enableCors({
-    origin: [
-      'https://frontend-body-tracker.onrender.com', // фронт
-      'https://body-tracker.onrender.com', // фронт
-      'https://body-tracker-54iq.onrender.com/',
-      'http://localhost:5173', // локально
-    ],
-    credentials: true, // если используешь куки или авторизацию
+    origin: true,
+    credentials: true,
   });
 
-  await app.listen(3000, '0.0.0.0');
+
+
+  await app.listen(process.env.PORT || 3000, '0.0.0.0');
 }
 bootstrap();
