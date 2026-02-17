@@ -1,5 +1,9 @@
 {
   "name": "body-tracker",
   "private": true,
-  "workspaces": ["apps/*", "packages/*"]
+  "workspaces": ["apps/*", "packages/*"],
+  "scripts": {
+    "dev": "yarn --cwd apps/backend back-dev & yarn --cwd apps/frontend front-dev"
+  }
+
 }
